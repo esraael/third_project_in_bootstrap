@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf_8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>project_3</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/script.js">
+        <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    </head>
+    <body>
+        <!-- -------------------------------------header----------------------------------------------------- -->
+        <div class="topnav" id="myTopnav">
+            <a href="#img" class=" head_li"><img class="head_img" width="200px" height="50px" src="images/Good_Food_-_Logo-02.png" alt="error"></a>
+            <a href="#home" class=" head_li">Home</a>
+            <a href="#news" class=" head_li">Links</a>
+            <a href="#about">About</a>
+            <a href="#contact" class="head_li ">
+                <div class="dropdown">
+                    <button onclick="myyFunction()" class="dropbtn">Trips</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">food</a>
+                      <a href="#about">drinks</a>
+                      <a href="#contact">sweets</a>
+                    </div>
+                  </div>
+                  <input class="head_search " type="search" placeholder="Search">
+                  <button class="head_sergf ">Search</button>
+
+            </a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="mykFunction()">&#9776;</a>
+
+            <button class="lll" onclick="document.getElementById('id01').style.display='block'" style="width:80px;">Login</button>
+
+            <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button class="ll" type="submit">Login</button>
+           <label>
+         <input type="checkbox" checked="checked" name="remember"> Remember me
+           </label>
+        </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+         <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
+</div>
+          </div>
+        </div>
+      </nav>
+          </div>
+          
+    <!-- -------------------------------------------------main-------------------------------------------------------- -->
+    <main>
+        <div class=" slideshow-container">
+            <div class="nav_container ">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-square iiii"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-whatsapp-square iiii"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-twitter-square iiii"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#"><i class="fab fa-linkedin iiii"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#"><i class="fab fa-instagram-square iiii"></i></a>
+                  </li>
+                </ul>
+              </div>
+              
+
+            <div class="mySlides fade ">
+              <div class="numbertext">1 / 5</div>
+              <img class="iii" src="images/a.jpg" style="width:100%">
+              <div class="text">
+                <h2 class="text_h2">Your Happiness With Us</h2>
+                <p class="text_p">Food, juices, soft drinks, sweets, and everything you desire,<br>
+                     you can find it with us</p>
+                     <button class="text_button">Visit Us</button>
+              </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img class="iii" src="images/b.jpg" style="width:100%">
+              <div class="text">
+                <h2 class="text_h2">Your Happiness With Us</h2>
+                <p class="text_p">Food, juices, soft drinks, sweets, and everything you desire,<br>
+                     you can find it with us</p>
+                     <button class="text_button">Visit Us</button>
+              </div>            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img class="iii" src="images/c.jpg" style="width:100%">
+                <div class="text">
+                    <h2 class="text_h2">Your Happiness With Us</h2>
+                    <p class="text_p">Food, juices, soft drinks, sweets, and everything you desire,<br>
+                         you can find it with us</p>
+                         <button class="text_button">Visit Us</button>
+                  </div>              </div>            
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img class="iii" src="images/d.jpg" style="width:100%">
+                <div class="text">
+                    <h2 class="text_h2">Your Happiness With Us</h2>
+                    <p class="text_p">Food, juices, soft drinks, sweets, and everything you desire,<br>
+                         you can find it with us</p>
+                         <button class="text_button">Visit Us</button>
+                  </div>              </div>            
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img class="iii" src="images/e.jpg" style="width:100%">
+                <div class="text">
+                    <h2 class="text_h2">Your Happiness With Us</h2>
+                    <p class="text_p">Food, juices, soft drinks, sweets, and everything you desire,<br>
+                         you can find it with us</p>
+                         <button class="text_button">Visit Us</button>
+                  </div>              
+                </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+              </div>
+            
+            </div>
+           
+    </main>
+    <!-- --------------------------------------------------------section_1------------------------------------------------------ -->
+    <section>
+        <div class="sec1_con col-lg-12 col-md-12 col-sm-12">
+            <h2 class="sec1_h2">WELCOME</h2>
+            <p class="sec1_p">Welcome to our restaurant, with us you will enjoy your food and everything you desire Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 cupiditate. Rem enim odio quaerat iste, doloribus facere quod necessitatibus. Dolorum.</p>
+            <button class="sec1_button">Learn More...</button>
+        </div>
+
+    </section>
+    <!-- -----------------------------------------------------section_2------------------------------------------------------- -->
+    <section>
+        <div class="bg-dark sec2_con  fw-bold">
+        <hr>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------section_3----------------------------------------------------- -->
+    <section>
+        <div class="sec3_con fw-bold">
+            <h2 class="sec3_h2">The most famous food in our restaurant</h2>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------section_4--------------------------------------------------- -->
+    <section>
+        <div class="bg-dark sec2_con fw-bold">
+        <hr>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------section_5--------------------------------------------------- -->
+    <section>
+    <button type="button" class="collapsible fw-bold">Open Section 1</button>
+    <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button type="button" class="collapsible fw-bold">Open Section 2</button>
+    <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button type="button" class="collapsible fw-bold">Open Section 3</button>
+    <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </section>
+    <!-- ---------------------------------------------------------section_6--------------------------------------------------- -->
+    <section>
+        <div class="sec6_con">
+            <h2 class="sec6_h2">Translate from Arabic To English</h2>
+        </div>
+
+        <div class="sec7_con">
+            <h4 class="d-inline-block sec7_h4">Write and Translate</h4>
+            <a href="#" class="sec7_a">Press Here</a><br>
+            <div class="mb-3">
+                <div class="popup" onclick="myFunction()">
+                    <button type="button"  class="btn btn-dark" data-bs-toggle="popover" title="Copy to Clipbord" data-bs-content="Some content inside the popover"> 
+                    Copy
+                  </button>
+                    <span class="popuptext" id="myPopup">Copied</span>
+                  </div>                  
+              </div>      
+            <textarea class=" col-lg-12 col-sm-12 col-11" placeholder="translate" name="tra" id="sec7_text" cols="180" rows="5"></textarea>
+        </div>
+        <div class="sec6_con">
+            <h2 class="sec6_h2">Translate from Arabic To English</h2>
+        </div>
+
+        <div class="sec7_con">
+            <h4 class="d-inline-block sec7_h4">Write and Translate</h4>
+            <a href="#" class="sec7_a">Press Here</a><br>
+            <div class="mb-3">
+                <div class="popup" onclick="myyyFunction()">
+                    <button type="button"  class="btn btn-dark" data-bs-toggle="popover" title="Copy to Clipbord" data-bs-content="Some content inside the popover"> 
+                    Copy
+                  </button>
+                    <span class="popuptext" id="myyPopup">Copied</span>
+                  </div>                  
+              </div>      
+            <textarea class=" col-lg-12 col-sm-12 col-11" placeholder="translate" name="tra" id="sec7_text" cols="180" rows="5"></textarea>
+        </div>
+        <div class="sec6_con">
+            <h2 class="sec6_h2">Translate from Arabic To English</h2>
+        </div>
+
+        <div class="sec7_con">
+            <h4 class="d-inline-block sec7_h4">Write and Translate</h4>
+            <a href="#" class="sec7_a">Press Here</a><br>
+            <div class="mb-3">
+                <div class="popup" onclick="myyyyFunction()">
+                    <button type="button"  class="btn btn-dark" data-bs-toggle="popover" title="Copy to Clipbord" data-bs-content="Some content inside the popover"> 
+                    Copy
+                  </button>
+                    <span class="popuptext" id="myyyPopup">Copied</span>
+                  </div>                  
+              </div>      
+            <textarea class=" col-lg-12 col-sm-12 col-11" placeholder="translate" name="tra" id="sec7_text" cols="180" rows="5"></textarea>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------------section_7----------------------------------------------- -->
+    <section>
+        <div class="bg-dark sec2_con fw-bold">
+        <hr>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------section_8-------------------------------------------- -->
+    <section>
+    <div class="sec8_cont">
+
+    </div>
+    </section>
+    <!-- -------------------------------------------------------------section_9-------------------------------------------- -->
+    <section>
+    <div class="sec9_cont">
+        <h2 class="sec9_h2">Our Food Menu</h2>
+    </div>
+    <!-- -----------divs----------- -->
+    <div>
+    <div class="row justify-content-evenly sec9_parent">
+        <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/1.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/2.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/3.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+          </div>
+
+          </div>
+          <div class="row justify-content-evenly sec9_parent">
+          <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/4.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+           </div>
+           <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/5.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/6.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+          </div>
+
+    </div>
+    <div class="row justify-content-evenly sec9_parent">
+        <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/7.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-12 col-sm-12 col-11">
+            <img class="sec9_content" src="images/8.jpg" alt="Avatar" width="91%" height="320px">
+            <div class="container">
+                <h2 class="sec9_h222 d-inline-block">Good Food</h2>
+                <button class="sec9_buttonnn">Know More..</button>
+                <p class="sec9_pppp">Visit Our Site</p>
+            </div>
+          </div>
+    </div>
+    </div>
+    
+    </section>
+    <!-- --------------------------------------------------section_10----------------------------------------------- -->
+    <section>
+        <div class="sec10_cont">
+
+        </div>
+    </section>
+    <!-- ----------------------------------------------------sec_11--------------------------------------------------- -->
+    <section>
+        <div class="bg-dark sec2_con  fw-bold">
+        <hr>
+        </div>
+    </section>
+    <!-- -----------------------------------------------------section_12----------------------------------------------------- -->
+    <section>
+        <div class="sec12_con fw-bold">
+            <h2 class="sec3_h2">Thanks For</h2>
+        </div>
+    </section>
+    <!-- ------------------------------------------------------section_13--------------------------------------------------- -->
+    <section>
+        <div class="row justify-content-evenly sec13_pare">
+            <div class="sec13_conte aaaa col-lg-3 col-md-12 col-sm-12 col-11">
+                <div class="overlay">
+                    <br>
+                <h5 class="sec13_h2">All Thanks and appreciation</h5>
+                <i class="far fa-clock iii_sec13"></i>
+                <p class="sec13_p">cooker 15,2020</p><br>
+                <img src="images/18.png" alt="" class="sec13_img">
+                <h4 class="sec13_h4">Ebrahim Ali</h4>
+                <p class="sec13_pppp">Works in the Profession of Cooking</p>
+                </div>
+            </div>
+            <div class="sec13_conte bbbb col-lg-3 col-md-12 col-sm-12 col-11">
+                <div class="overlay">
+                    <br>
+                <h5 class="sec13_h2">All Thanks and appreciation</h5>
+                <i class="far fa-clock iii_sec13"></i>
+                <p class="sec13_p">cooker 15,2020</p><br>
+                <img src="images/19.png" alt="" class="sec13_img">
+                <h4 class="sec13_h4">sameh mohammed</h4>
+                <p class="sec13_pppp">Works in the Profession of Cooking</p>
+                </div>
+            </div>
+            <div class="sec13_conte cccc col-lg-3 col-md-12 col-sm-12 col-11">
+                <div class="overlay">
+                    <br>
+                <h5 class="sec13_h2">All Thanks and appreciation</h5>
+                <i class="far fa-clock iii_sec13"></i>
+                <p class="sec13_p">cooker 15,2020</p><br>
+                <img src="images/20.png" alt="" class="sec13_img">
+                <h4 class="sec13_h4">lina Ali</h4>
+                <p class="sec13_pppp">Works in the Profession of Cooking</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark">
+         <hr>
+         </div>
+    </section>
+    <!-- ----------------------------------------------sec_14---------------------------------------------- -->
+    <section class=" sdxcfgbh">
+        <h2 class=" sec14_conte">Restaurant News</h2>
+        <div class=" bg-dark sdfghjdfghjkdfgh">
+            <img class="ercvbnertbsedrftg" src="images/x.jpeg" alt="error" >
+            <h2 class="sec14_h2">Podcast Title</h2>
+            <i class="fas fa-stopwatch iiii_sec14"></i>
+            <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+            <div class="sec14_line"></div>
+            <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                 Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                 Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                <div class="d-flex sec14_parpar">
+                    <div class="sec14_concon">
+                       <i class="fas fa-podcast iiiiii_sec14"></i>
+                       <p class="d-inline-block sec14_pppppp">Podcast</p>
+                    </div>
+                    <div class="sec14_concon">
+                        <i class="fas fa-clock iiiiii_sec14"></i>
+                        <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                    </div>
+                    <div class="sec14_concon ppppppppp">
+                        <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                        <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                    </div>
+                    </div>
+                
+               </div>
+               <div class=" bg-dark sdfghjdfghjkdfgh">
+                <img class="ercvbnertbsedrftg" src="images/x.webp" alt="error" >
+                <h2 class="sec14_h2">Podcast Title</h2>
+                <i class="fas fa-stopwatch iiii_sec14"></i>
+                <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+                <div class="sec14_line"></div>
+                <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                     Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                     Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                    <div class="d-flex sec14_parpar">
+                        <div class="sec14_concon">
+                           <i class="fas fa-podcast iiiiii_sec14"></i>
+                           <p class="d-inline-block sec14_pppppp">Podcast</p>
+                        </div>
+                        <div class="sec14_concon">
+                            <i class="fas fa-clock iiiiii_sec14"></i>
+                            <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                        </div>
+                        <div class="sec14_concon ppppppppp">
+                            <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                            <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                        </div>
+                        </div>
+                    
+                   </div>
+                   <div class=" bg-dark sdfghjdfghjkdfgh">
+                    <img class="ercvbnertbsedrftg" src="images/y.jpeg" alt="error" >
+                    <h2 class="sec14_h2">Podcast Title</h2>
+                    <i class="fas fa-stopwatch iiii_sec14"></i>
+                    <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+                    <div class="sec14_line"></div>
+                    <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                         Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                         Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                        <div class="d-flex sec14_parpar">
+                            <div class="sec14_concon">
+                               <i class="fas fa-podcast iiiiii_sec14"></i>
+                               <p class="d-inline-block sec14_pppppp">Podcast</p>
+                            </div>
+                            <div class="sec14_concon">
+                                <i class="fas fa-clock iiiiii_sec14"></i>
+                                <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                            </div>
+                            <div class="sec14_concon ppppppppp">
+                                <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                                <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                            </div>
+                            </div>
+                        
+                       </div>
+                       <div class=" bg-dark sdfghjdfghjkdfgh">
+                        <img class="ercvbnertbsedrftg" src="images/z.webp" alt="error" >
+                        <h2 class="sec14_h2">Podcast Title</h2>
+                        <i class="fas fa-stopwatch iiii_sec14"></i>
+                        <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+                        <div class="sec14_line"></div>
+                        <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                             Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                             Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                            <div class="d-flex sec14_parpar">
+                                <div class="sec14_concon">
+                                   <i class="fas fa-podcast iiiiii_sec14"></i>
+                                   <p class="d-inline-block sec14_pppppp">Podcast</p>
+                                </div>
+                                <div class="sec14_concon">
+                                    <i class="fas fa-clock iiiiii_sec14"></i>
+                                    <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                                </div>
+                                <div class="sec14_concon ppppppppp">
+                                    <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                                    <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                                </div>
+                                </div>
+                            
+                            </div>
+
+    </section>
+
+<!-- =================================================================================================== -->
+    <section>
+        <div class="sec14_paren">
+            <h2 class=" sec14_conte">Restaurant News</h2>
+            <div class="bg-dark  text-white rounded mmmmmmmmmm">
+                <div class="sec14_jummmm">
+                <h2 class="sec14_h2">Podcast Title</h2>
+                <i class="fas fa-stopwatch iiii_sec14"></i>
+                <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+                <div class="sec14_line"></div>
+                <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                     Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                     Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                    <div class="d-flex sec14_parpar">
+                        <div class="sec14_concon">
+                           <i class="fas fa-podcast iiiiii_sec14"></i>
+                           <p class="d-inline-block sec14_pppppp">Podcast</p>
+                        </div>
+                        <div class="sec14_concon">
+                            <i class="fas fa-clock iiiiii_sec14"></i>
+                            <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                        </div>
+                        <div class="sec14_concon ppppppppp">
+                            <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                            <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                        </div>
+                        </div>
+                    </div><!-- jummmm -->
+                    <div class="sec14_immmmmmmmmmmmmage ">
+                        <img class="ercvbnertbsedrftg" src="images/x.jpeg" alt="error" width="400px" height="370px">
+                    </div>
+                   
+            </div>
+            <div class="bg-dark  text-white rounded mmmmmmmmmm">
+                <div class="sec14_immmmmmmmmmmmmage">
+                    <img class="ercvbnertbsedrftg kkkkkkkkkkkkkk" src="images/x.webp" alt="error" width="400px" height="370px">
+
+                </div>
+                <div class="sec14_jummmm mmmmmmmmmmmmmmmmm">
+                <h2 class="sec14_h2">Podcast Title</h2>
+                <i class="fas fa-stopwatch iiii_sec14"></i>
+                <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+                <div class="sec14_line"></div>
+                <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                     Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                     Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                    <div class="d-flex sec14_parpar">
+                        <div class="sec14_concon">
+                           <i class="fas fa-podcast iiiiii_sec14"></i>
+                           <p class="d-inline-block sec14_pppppp">Podcast</p>
+                        </div>
+                        <div class="sec14_concon">
+                            <i class="fas fa-clock iiiiii_sec14"></i>
+                            <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                        </div>
+                        <div class="sec14_concon ppppppppp">
+                            <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                            <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                        </div>
+                        </div>
+                    </div><!-- jummmm -->
+                   
+                    
+            </div>
+            <div class="bg-dark  text-white rounded mmmmmmmmmm">
+                <div class="sec14_jummmm">
+                <h2 class="sec14_h2">Podcast Title</h2>
+                <i class="fas fa-stopwatch iiii_sec14"></i>
+                <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+                <div class="sec14_line"></div>
+                <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                     Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                     Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                    <div class="d-flex sec14_parpar">
+                        <div class="sec14_concon">
+                           <i class="fas fa-podcast iiiiii_sec14"></i>
+                           <p class="d-inline-block sec14_pppppp">Podcast</p>
+                        </div>
+                        <div class="sec14_concon">
+                            <i class="fas fa-clock iiiiii_sec14"></i>
+                            <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                        </div>
+                        <div class="sec14_concon ppppppppp">
+                            <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                            <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                        </div>
+                        </div>
+                    </div><!-- jummmm -->
+                    <div class="sec14_immmmmmmmmmmmmage">
+                        <img class="ercvbnertbsedrftg" src="images/y.jpeg" alt="error" width="400px" height="370px">
+
+                    </div>
+                
+            </div>
+            <div class="bg-dark  text-white rounded mmmmmmmmmm">
+                <div class="sec14_immmmmmmmmmmmmage">
+                    <img class="ercvbnertbsedrftg kkkkkkkkkkkkkk" src="images/z.webp" alt="error" width="400px" height="370px">
+
+                </div>
+                <div class="sec14_jummmm mmmmmmmmmmmmmmmmm">
+                <h2 class="sec14_h2">Podcast Title</h2>
+                <i class="fas fa-stopwatch iiii_sec14"></i>
+                <p class="d-inline-block sec14_pp">Mon, May, 25th, 2020</p>
+                <div class="sec14_line"></div>
+                <p class="sec14_p">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veritatis obcaecati architecto quaerat?
+                     Excepturi obcaecati saepe nulla dolorem molestias.<br>
+                     Iure corporis dolores nisi repudiandae deserunt temporibus iste distinctio,<br> blanditiis fugiat illum?</p>
+                    <div class="d-flex sec14_parpar">
+                        <div class="sec14_concon">
+                           <i class="fas fa-podcast iiiiii_sec14"></i>
+                           <p class="d-inline-block sec14_pppppp">Podcast</p>
+                        </div>
+                        <div class="sec14_concon">
+                            <i class="fas fa-clock iiiiii_sec14"></i>
+                            <p class="d-inline-block sec14_pppppp">55 Mins</p>
+                        </div>
+                        <div class="sec14_concon ppppppppp">
+                            <a class="text-danger" href="#"><i class="fas fa-play iiiiii_sec14"></i></a>
+                            <a class="text-danger" href="#"><p class="d-inline-block sec14_pppppp">Play Episode</p></a>
+                        </div>
+                        </div>
+                    </div><!-- jummmm -->
+                    
+                
+                </div>
+        </div>
+        <br>
+    </section>
+    <!-- -------------------------------------------section-15---------------------------------------------- -->
+    <section>
+        <div class=" sec15_parrrre">
+            <h1 class="sec15_h2fgh">JOIN US</h1>
+            <div class="row justify-content-evenly sec15_connnnn">
+                <div class="sec15_ooooooopp col-lg-2 col-md-6 col-sm-6 col-6">
+                    <h3 class="sec15_h2222">Subscribe Now</h3>
+                    <img class="img_sec15555" src="images/twetter.jpg" alt="error"><br>
+                    <a href="#" class="anchor_sec15">Go To Link</a>
+                </div>
+                <div class="sec15_ooooooopp col-lg-2 col-md-6 col-sm-6 col-6">
+                    <h3 class="sec15_h2222">Follow</h3>
+                    <img class="img_sec15555" src="images/whats.jpg" alt="error"><br>
+                    <a href="#" class="anchor_sec15">Go To Link</a>
+                </div>
+                <div class="sec15_ooooooopp col-lg-2 col-md-6 col-sm-6 col-6">
+                    <h3 class="sec15_h2222">Like the Page</h3>
+                    <img class="img_sec15555" src="images/in.jpg" alt="error"><br>
+                    <a href="#" class="anchor_sec15">Go To Link</a>
+                </div>
+                <div class="sec15_ooooooopp col-lg-2 col-md-6 col-sm-6 col-6">
+                    <h3 class="sec15_h2222">Watch Vedios</h3>
+                    <img class="img_sec15555" src="images/insta.jpg" alt="error"><br>
+                    <a href="#" class="anchor_sec15">Go To Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------------footer--------------------------------------------------- -->
+    <footer class="fooooot">
+        <div class="row justify-content-evenly footer_parent">
+            <div class="footer_content col-lg-3 col-md-6 col-sm-12 col-12">
+                <hr class="hhhhhhh" width="120%">
+                <img class="footer_img" src="images/Good_Food_-_Logo-02.png" alt="eroor" width="100px" height="100px">
+                <h4 class="footer_h2">Company</h4>
+                <hr class="hhhhhhh" width="120%">
+                <a href="#" class="footer_p">tet : 000-000-000</a><br>
+                <a href="#" class="footer_p">Address : Egypt</a><br>
+                <a href="#" class="footer_p">Fax : 000-000-000</a><br>
+            </div>
+            <div class="footer_content col-lg-3 col-md-6 col-sm-12 col-12">
+                <hr class="hhhhhh" width="120%">
+                <img class="footer_img" src="images/Good_Food_-_Logo-02.png" alt="eroor" width="100px" height="100px">
+                <h4 class="footer_h2">Links</h4>
+                <hr class="hhhhhh" width="120%" >
+                <a href="#" class="footer_p">Visit Us</a><br>
+                <a href="#" class="footer_p">Take alook</a><br>
+                <a href="#" class="footer_p">Your Health is More important</a><br>
+            </div>
+            <div class="footer_content col-lg-3 col-md-6 col-sm-12 col-12">
+                <hr class="hhhhh" width="140%">
+                <img class="footer_img" src="images/Good_Food_-_Logo-02.png" alt="eroor" width="100px" height="100px">
+                <h4 class="footer_h2">Vision</h4>
+                <hr class="hhhhh" width="140%">
+                <a href="#" class="footer_p">Services for all</a><br>
+                <a href="#" class="footer_p">Provide best services</a><br>
+                <a href="#" class="footer_p">you will be better than before</a><br>
+            </div>
+        </div>
+            <hr class="oooooooooo">
+            <h5 class="foo_h22">COPYRIGHT  @2020 ESRAAELSAYEDABDELRAOOF.<br>GOODCOMPANY.ALLRIGHTS</h5>
+            <hr class="oooooooooo">
+            <br>
+
+        
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+          
+
+    
+
+    <script src="js/script.js">
+
+    </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

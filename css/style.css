@@ -1,0 +1,961 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------------------header-------------------------------------------------------------- */
+.topnav {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 17px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .icon {
+  display: none;
+}
+.dropbtn {
+  background-color:red;
+  color: white;
+  font-size: 16px;
+  border: 2px solid white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
+  padding-left: 17px;
+  padding-right: 17px;
+  }
+  .dropbtn:hover {
+  opacity: 0.4;
+  }
+  .dropdown {
+  display: inline-block;
+  position: relative;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  margin-top: 70px;
+  }
+  .dropdown-content a {
+  color: black;
+  padding: 14px 5px;
+  text-decoration: none;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+.topnav a:hover {
+  background-color: #555;
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn ,.head_search ,.head_sergf,.lll{
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown-content{
+    margin-top: 10px;
+  }
+  .topnav.responsive .lll {
+    display: block;
+    margin-left: 312px;
+  }
+  .topnav.responsive .head_search{
+    display: block;
+    margin-left: -1px;
+  }
+  .topnav.responsive .head_sergf{
+    display: block;
+    margin-left: 231px;
+  }
+
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn  {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.hhh{
+  float: left;
+}
+.head_search{
+  width: 230px;
+  height: 38px;
+  margin-left: 19.7%;
+  border: 2px solid black;
+  border-radius: 6px;
+  position: absolute;
+  margin-top: 20px;
+}
+.head_sergf{
+  width: 80px;
+  height: 38px;
+  margin-left: 38%;
+  border: 2px solid black;
+  border-radius: 6px;
+  position: absolute;
+  margin-top: 20px;
+
+}
+.head_sergf:hover{
+  opacity: 0.8;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .lll {
+    height: 38px;
+    margin-left: 45%;
+    border: 2px solid black;
+    border-radius: 6px;
+    color: black;
+    position: absolute;
+    margin-top: 20px;
+  }
+  
+  .lll:hover {
+  opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-radius: 6px;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  }
+  
+  img.avatar {
+  width: 40%;
+  border-radius: 50%;
+  }
+  
+  .container {
+  padding: 16px;
+  }
+  
+  span.psw {
+  float: right;
+  padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  }
+  .ll{
+    width: 100%;
+    height: 38px;
+    border: 2px solid black;
+    border-radius: 6px;
+    color:black;
+    background-color: green;
+  }
+  .close:hover,
+  .close:focus {
+  color: red;
+  cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  }
+/* ------------------------------------------------main------------------------------------------------------ */
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+  .iii {vertical-align:middle;
+    height: 100vh;
+  }  
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 97vh;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:white;
+  /* border: 2px solid black; */
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width:50%;
+  /* height: 32vh; */
+  text-align: center;
+  border-radius: 12px;
+  margin-left: 26%;
+}
+.text_button{
+  border-radius: 8px;
+  width: 130px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+ .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+ .fade {
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+
+  }
+} 
+
+ /*On smaller screens, decrease text size*/ 
+  @media only screen and (max-width: 300px) { 
+  .prev, .next,.text {font-size: 11px}
+}
+.nav_container{
+  position: absolute;
+  position: fixed;
+  z-index: 10;
+  margin-top: 170px;
+  margin-left:85%;
+}
+.iiii{
+  font-size: 55px;
+  color: white;
+}
+.iiii:hover{
+  color: black;
+}
+/* -----------------------------------------------------section_1----------------------------------------------------------- */
+.sec1_con{
+  width: 100%;
+  /* height: 205px; */
+  background-color: rgba(236, 236, 236, 0.877);
+  color: white;
+}
+.sec1_h2{
+  color: red;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+.sec1_p{
+  padding-left: 40px;
+  color: black;
+}
+.sec1_button{
+  border-radius: 7px;
+  width: 130px;
+  height: 35px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+.sec1_button:hover{
+  opacity: 0.4;
+}
+ /* -----------------------------------------------------section_3----------------------------------------------------------- */
+ .sec3_con{
+  width: 100%;
+  /* height: 120px; */
+  text-align: center;
+  padding-top: 44px;
+  background-color: rgba(236, 236, 236, 0.877);
+
+ }
+ .sec3_h2{
+  padding-bottom: 30px;
+ }
+ /* -------------------------------------------------------section_4---------------------------------------------------------- */
+ .collapsible {
+  background-color:#000000e1;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+} 
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  background-color: #f1f1f1;
+}
+/* -----------------------------------------------------section_5--------------------------------------- */
+.sec6_con{
+  width: 100%;
+  /* height: 70px; */
+  text-align: center;
+  padding-top: 20px;
+  background-color: rgba(236, 236, 236, 0.877);
+
+ }
+ .sec6_h2{
+  padding-bottom: 30px;
+ }
+ /* ---------------------------------------------------section_7----------------------------------------- */
+ .sec7_con{
+  width: 100%;
+  height: 240px;
+  padding-left: 30px;
+ }
+ 
+ .sec7_a{
+  text-decoration: none;
+  margin-left: 6px;
+  font-size: 22px;
+  color: rgba(248, 45, 45, 0.788);
+ }
+ .sec7_a:hover{
+  color: rgba(36, 27, 27, 0.692);
+ }
+
+
+
+ .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: 20px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+ /* ------------------------------------------------section_8---------------------------------------------- */
+.sec8_cont{
+  width: 100;
+  height: 350px;
+  background-image: url("../images/z.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sec9_h2{
+  padding-bottom: 30px;
+}
+/* ------------------------------------------------section_9---------------------------------------------------- */
+.sec9_parent{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.sec9_cont{
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding-top: 13px;
+  background-color: rgba(236, 236, 236, 0.877);
+ }
+ .card :after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  transition: 1s;
+ }
+ .card:hover :after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  transition: 1s;
+ }
+ .card ::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  transition: 1s;
+ }
+ .card:hover :before{
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  transition: 1s;
+ }
+ .sec9_buttonnn{
+  width: 100px;
+  height: 37px;
+  margin-left: 8%;
+  border-radius: 7px;
+ }
+ .sec9_pppp{
+  margin-bottom: 40px;
+
+}
+ .sec9_content{
+  margin-left: 4.5%;
+ }
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 28%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  position: relative;
+}
+.sec9_h222{
+  display: inline-block;
+ }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+ /* ---------------------------------------------------------------sec_10-------------------------------------------=------ */
+ .sec10_cont{
+  width: 100;
+  height: 350px;
+  background-image: url("../images/88.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* ------------------------------------------------------------------sec_12-------------------------------------------------- */
+.sec12_con{
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  padding-top: 24px;
+  background-color: rgba(236, 236, 236, 0.877);
+
+ }
+/* --------------------------------------------------------------sec_13------------------------------------------------- */
+.sec13_pare{
+  padding-top: 5%;
+  margin-left: 2%;
+}
+.sec13_conte{
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 7%;
+}
+.overlay{
+  width: 108%;
+  height: 100%;
+  margin-left: -3.63%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 7;
+  opacity: 0.8;
+  border-radius: 16px;
+}
+.sec13_conte:hover{
+  transform: scale(0.9,0.9);
+  transition: 0.5s;
+}
+.aaaa{
+  background-image:url(../images/18.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+.bbbb{
+  background-image:url(../images/19.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cccc{
+  background-image:url(../images/20.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec13_h2{
+  margin-left: 10%;
+  color: white;
+}
+.iii_sec13{
+  color: white;
+  margin-left: 10%;
+}
+.sec13_p{
+  display: inline-block;
+  color: white;
+}
+.sec13_img{
+  border-radius: 50%;
+  margin-left: 10%;
+  margin-top: 148px;
+}
+.sec13_h4{
+  color: white;
+  margin-left: 10%;
+}
+.sec13_pppp{
+  color: white;
+  margin-left: 10%;
+}
+/* ---------------------------------------------------------sec_14------------------------------------------------ */
+.sec14_conte{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mmmmmmmmmm{
+  width: 90%;
+  margin-left: 76px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ercvbnertbsedrftg{
+  border-radius: 10px;
+  /* transform: skew(6deg); */
+  /* margin-right: -20px; */
+}
+.kkkkkkkkkkkkkk{
+  border-radius: 10px;
+  /* transform: skewX(-6deg); */
+  /* margin-left: -20px; */
+
+}
+.sec14_jummmm{
+  margin-top: 40px;
+  margin-left: 80px;
+}
+.mmmmmmmmmmmmmmmmm{
+  margin-right: 90px;
+}
+.sec14_line{
+    width: 130px;
+    height: 0;
+    border: 2px solid red;
+    margin-left: 800;
+    margin-bottom: 20px;
+}
+.sec14_concon{
+  border: 2px solid white;
+  background-color: gray;
+  margin-right: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 40px;
+  padding-top:1% ;
+}
+.sec14_concon:hover{
+  opacity: 0.4;
+}
+.ppppppppp:hover{
+  background-color: black;
+}
+
+/* -----------------------------------------------sec_15------------------------------------------ */
+.sec15_h2fgh{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sec15_connnnn{
+  width: 100%;
+}
+.sec15_ooooooopp{
+  width: 50%;
+  margin-left: 3%;
+  background-color: rgba(97, 80, 80, 0.897);
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.img_sec15555{
+  width: 70px;
+  border-radius: 15px;
+  margin-top: 14px;
+}
+.img_sec15555:hover{
+  opacity: 0.6;
+}
+.anchor_sec15{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  margin-top: 15px;
+}
+.anchor_sec15:hover{
+  opacity: 0.5;
+}
+.sec15_h2222{
+  color: white;
+}
+/* -------------------------------------footer------------------------------------------------------------- */
+.footer_parent{
+  /* background-color: black; */
+  margin-top: 40px;
+}
+.fooooot{
+  width: 100%;
+  background-color: black;
+}
+.footer_content{
+  width: 30%;
+  margin-left: 5%;
+  text-align: center;
+}
+.hhhhhhh{
+  margin-left: -40%;
+  color: white;
+}
+.hhhhhh{
+  margin-left: -43%;
+  color: white;
+}
+.hhhhh{
+  margin-left:-50% ;
+  color: white;
+}
+.footer_img{
+  border-radius: 50%;
+  border: 2px solid rgb(56, 53, 53); 
+  margin-top: 15px;
+}
+.footer_h2{
+  display: inline-block;
+  margin-left: 3%;
+  color: white;
+}
+.footer_p{
+  color: white;
+  text-decoration: none;
+}
+.footer_p:hover{
+  opacity: 0.4;
+}
+.oooooooooo{
+  color: white;
+}
+.foo_h22{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+/* ============================================================================================= */
+.sdxcfgbh{
+  display: none;
+}
+@media(max-width:1300px){
+  .sec14_paren{
+    display: none;
+  }
+  .sdxcfgbh{
+    display:inline-block;
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .ercvbnertbsedrftg{
+    width: 100%;   
+    height: 450px;
+  }
+  .sdfghjdfghjkdfgh{
+    margin-bottom:30px ;
+  }
+  .iiii_sec14{
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .sec14_h2{
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+  }.sec14_pp{
+    color: white;
+  }
+  .sec14_line{
+    margin-left: 20px;
+  }
+  .sec14_p{
+    color: white;
+    margin-left: 20px;
+  }
+  .sec14_parpar{
+    margin-left: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
